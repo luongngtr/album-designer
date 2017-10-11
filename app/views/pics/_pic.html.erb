@@ -1,0 +1,9 @@
+
+<% if pic.id == firstid %>
+  <% keke = "active" %>
+<% else %>
+  <% keke = " " %>
+<% end %>
+<div class="<%= "carousel-item " + keke %>" style="position: relative;margin: 0 auto; width: <%= pic.width*500/pic.height %>px; height: 500px;">
+  <img class="d-block w-100 img-fluid" src=<%= "/assets/"+ pic.name %> alt="<%= pic.name %>" style="position: relative; width: <%= pic.width*500/pic.height %>px; height: 500px;">
+</div>

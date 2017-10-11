@@ -1,0 +1,2 @@
+$('#my-first-update').html('<%= escape_javascript render partial: 'types/type', :collection => @types, :locals => {:clickedid => @clickedid}  %>');
+$('#my-second-update').html('<%= escape_javascript render partial: 'pics/pic', :collection => @pics, :locals => {:firstid => @firstid} %>');

@@ -1,0 +1,9 @@
+<% if type.id == clickedid %>
+  <% keke = "active" %>
+<% else %>
+  <% keke = "disabled" %>
+<% end %>
+
+<li class="nav-item">
+    <%= link_to type.name, bootstrap_library_path(type), :class => "nav-link "+ keke, remote: true %>
+</li>
